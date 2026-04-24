@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Digital Clock</title>
+
+        <!-- <link /> -->
+    </head>
+    <body>
+        <h2>This is my Digital Clock.</h2>
+
+        <!-- Contains the clock -->
+        <div class="clock">
+
+            <!-- Hours -->
+            <div>
+                <span id="hour">00</span>
+                <span class="text">Hours</span>
+            </div>
+
+            <!-- Minutes -->
+            <div>
+                <span id="minute">00</span>
+                <span class="text">Minutes</span>
+            </div>
+
+            <!-- Seconds -->
+            <div>
+                <span id="second">00</span>
+                <span class="text">Seconds</span>
+            </div>
+
+            <div>
+                <span id="ampm">AM</span>
+            </div>
+
+        </div>
+        
+        <script src="index.js"></script>
+
+    </body>
+</html>
+
+<style scoped>
+
+    body {
+        margin: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clock {
+        padding: 5px;
+        border: solid 2px gray;
+        display: flex;
+    }
+
+    .clock div {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .clock span {
+        font-size: 20px;
+    }
+    
+
+</style>
